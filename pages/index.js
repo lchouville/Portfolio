@@ -1,11 +1,20 @@
 // pages/index.js
-import React from 'react';
+
+import Head from 'next/head';
+
+import Header from '../components/Header'; // Import the Header component
+import Footer from '../components/Footer'; // Import the Footer component
 
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to My Portfolio</h1>
-      <p>Explore my projects, skills, and experiences.</p>
+      <Head>
+        <title>Luka's portfolio</title>
+        <meta name="description" content="Luka Chouville's portfolio website" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
+      <Footer />
     </div>
   );
 }

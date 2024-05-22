@@ -1,0 +1,12 @@
+-- v0.1 --
+    - main page
+        - description
+    - project page
+        - acess
+        - description
+    - experiences page
+        - acess
+        - description
+    - skills page
+        - acess
+        - description

@@ -4,9 +4,7 @@
   "description": "Welcome to my portfolio, explore my projects, skills, and experiences through this site.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next dev"
   },
   "keywords": [],
   "author": "",
