@@ -1,4 +1,4 @@
--- v0.1 --
+-- v0.1 -- (publishing test and configuration)
     - main page
         - description
     - project page
