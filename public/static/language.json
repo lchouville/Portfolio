@@ -1,0 +1,21 @@
+{
+    "bannerSection":{
+        "en": {
+            "title":"Luka's portfolio"
+
+        },
+        "fr": {
+            "title":"Portfolio Luka"
+        }
+    },
+    "welcomeSection": {
+        "en": {
+            "title": "Welcome to my portfolio website",
+            "description": "This is the description in English."
+        },
+        "fr": {
+            "title": "Bienvenue sur mon site portfolio",
+            "description": "Ceci est la description en français."
+        }
+    }
+}

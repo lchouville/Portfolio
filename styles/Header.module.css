@@ -1,3 +1,55 @@
 .header{
-    width: 40%;
+    /* position */
+    /* dimention */
+    width: 75%;
+    /* behavior */
+    padding: 20px;
+    text-align: center;
+    /* cursor: pointer; */
+    /* visual*/
+    background-color: #f8f8f8; /* Light grey background */
+    border-bottom: 2px solid #ccc; /* Grey border */
+    border-radius: 0 0 80px 0;
+}  
+.header h1 {
+  /* position */
+  /* dimention */
+  height: 40%;
+  /* behavior */
+  margin: 0;
+  /* visual*/
+  font-size: 2.2em;
+  color: #333; /* Darker grey text color */
+}
+.language{
+  /* position */
+  /* dimention */
+  /* behavior */
+  display: flex;
+  gap: 10px; /* Adjust spacing between buttons as needed */
+  margin: 0;
+  /* visual*/
+  font-size: 0.7em;
+  color: #333; /* Darker grey text color */
+}
+.language button{
+  /* position */
+  /* dimention */
+  width: 20%; /* Adjust button width as needed */
+  height: fit-content; /* Adjust button height as needed */
+  /* behavior */
+  padding: 0;
+  /* visual*/
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+}
+.language img{
+  /* position */
+  /* dimention */
+  width: 100%;
+  height: 100%;
+  /* behavior */
+  object-fit: cover; /* Ensures the image covers the button */
+  /* visual*/
 }

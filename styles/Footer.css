@@ -1,0 +1,18 @@
+/* styles/Footer.module.css */
+footer {
+  /* position */
+  /* dimention */
+  height: 6%;
+  /* behavior */
+  padding: 20px;
+  text-align: center;
+  /* visual*/
+}
+body.light-mode footer{
+  background-color: #333;
+  color: #fff;
+}
+body.dark-mode footer{
+  background-color: #ffffff;
+  color: #333;
+}

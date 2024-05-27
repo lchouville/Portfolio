@@ -1,3 +1,39 @@
 html{
-    min-height: 100%;
+    /* position */
+    /* dimention */
+    height: 100%;
+    /* behavior */
+    /* visual*/
+}
+body{
+    /* position */
+    /* dimention */
+    height: 100%;
+    /* behavior */
+    /* visual*/
+    background-color: #dbdbdb
+}
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+.container{
+    /* position */
+    /* dimention */
+    height: 40%;
+    /* behavior */
+    /* visual*/
+}
+.main-container{
+  /* position */
+  /* dimention */
+  height: 100%;
+  /* behavior */
+  /* visual*/
 }
