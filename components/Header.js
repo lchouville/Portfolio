@@ -1,26 +1,15 @@
-import { useLocale } from '../context/LocaleContext';
-import styles from '/styles/Header.module.css';
+// components/Header.js
+import { changeStateNav } from '../utils/nav.js'; // Adjust the path accordingly
 
 export default function Header({ title }) {
-  const { changeLocale } = useLocale();
-
-  const handleLanguageChange = (lang) => {
-    changeLocale(lang);
-  };
-
   return (
     <header>
-      <div className={styles.header}>
-        <div className={styles.language}>
-          <button id="en" onClick={() => handleLanguageChange('en')}>
-            <img src="/img/en.png" alt="english" />
-          </button>
-          <button id="fr" onClick={() => handleLanguageChange('fr')}>
-            <img src="/img/fr.png" alt="français" />
-          </button>
-        </div>
+        <button 
+          id="btn-nav"
+          className='btn-nav'
+          onClick={() => changeStateNav()}
+        ></button>
         <h1>{title}</h1>
-      </div>
     </header>
   );
 }

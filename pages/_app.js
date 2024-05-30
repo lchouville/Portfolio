@@ -2,8 +2,11 @@
 
 import { useEffect } from 'react';
 import { LocaleProvider } from '../context/LocaleContext';
+// CSS styles
 import '../styles/reset.css';
 import '../styles/globals.css';
+import '../styles/themes/light-mode.css';
+import '../styles/themes/dark-mode.css';
 import { applyTheme, listenForThemeChanges } from '../utils/theme';
 
 function MyApp({ Component, pageProps }) {
@@ -12,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     listenForThemeChanges(); // Set up listener for theme changes
     const next = document.getElementById('__next');
     if (next) {
-      next.classList.add('main-container');
+      next.classList.add('next-div');
     }
 
     return () => {

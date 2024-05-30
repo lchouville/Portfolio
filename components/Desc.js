@@ -1,18 +1,11 @@
-// components/Footer.js
+// components/Desc.js
+import styles from '/styles/Components.module.css';
 
-import PropTypes from 'prop-types';
-import styles from '/styles/Description.module.css';
-
-export default function Desc({ title, text }) {
+export default function Desc({ title, desc }) {
   return (
     <div className={styles.desc}>
       <h1>{title}</h1>
-      <p>{text}</p>
+      <p>{desc}</p>
     </div>
   );
 }
-
-Desc.propTypes = {
-  title: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-};
