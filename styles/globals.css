@@ -63,7 +63,7 @@ font-size: 1.9rem;
   background-position: center; /* Optional: to center the image */
 }
 .btn-nav.open{
-  transform: rotate(-90deg);
+  transform: translateY(20px)rotate(-900deg);
 }
 #nav.open {
   left: 0;
