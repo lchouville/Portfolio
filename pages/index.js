@@ -11,35 +11,38 @@ import { useLocale } from '../context/LocaleContext';
 
 export default function Home() {
   const { locale, translatedText } = useLocale();
+  // Store the common part of the translation path
+  const globalLPath = translatedText.global?.[locale]; // global laguage path
+  const homeLPath = translatedText.home?.[locale]; // home laguage path
   return (
     <div className='main-container'>
       <Head>
-        <title>Luka's portfolio</title>
+        <title>{translatedText.home?.[locale]?.title}</title>
         <meta name="description" content="Luka Chouville's portfolio website" />
         <link rel="icon" href="#" />
       </Head>
       <Header 
-        title={translatedText.bannerSection?.[locale]?.title}
+        _title={globalLPath?.title}
       />
       <Nav/>
       <div className="container">
-        <h1>{translatedText.welcomeSection?.[locale]?.title}</h1>
+        <h1>{homeLPath?.welcome}</h1>
         <div id="fpSection" className='sliderSection'>
           <Desc 
-            title={translatedText.fpSection?.[locale]?.title}
-            desc={translatedText.fpSection?.[locale]?.description}
+            _title={homeLPath?.fpSection?.title}
+            _desc={homeLPath?.fpSection?.description}
           />
         </div>
         <div id="rpSection" className='sliderSection'>
           <Desc 
-            title={translatedText.rpSection?.[locale]?.title}
-            desc={translatedText.rpSection?.[locale]?.description}
+            _title={homeLPath?.rpSection?.title}
+            _desc={homeLPath?.rpSection?.description}
           />
         </div>
         <div id="reSection" className='sliderSection'>
           <Desc 
-            title={translatedText.reSection?.[locale]?.title}
-            desc={translatedText.reSection?.[locale]?.description}
+            _title={homeLPath?.reSection?.title}
+            _desc={homeLPath?.reSection?.description}
           />
         </div>
       </div>

@@ -32,7 +32,13 @@ body.light-mode .container{
     border-color: #ccc;
     color: #463434;
 }
-body.light-mode .container h1{
+body.light-mode .container h1,
+body.light-mode .container h2,
+body.light-mode .container h3,
+body.light-mode .container h4,
+body.light-mode .container h5,
+body.light-mode .container h6
+{
     color: #514444;
 }
 body.light-mode .sliderSection{

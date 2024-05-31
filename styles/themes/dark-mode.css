@@ -32,7 +32,12 @@ body.dark-mode .container{
     border-color: #585858;
     color:#b9c2cc;
 }
-body.dark-mode .container h1{
+body.dark-mode .container h1,
+body.dark-mode .container h2,
+body.dark-mode .container h3,
+body.dark-mode .container h4,
+body.dark-mode .container h5,
+body.dark-mode .container h6{
     color: #a2c0c1;
 }
 body.dark-mode .sliderSection{
