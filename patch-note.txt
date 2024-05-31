@@ -1,1 +1,33 @@
 -- release-<date> version-0.1 --
+    Adding:
+    - Home Page with:
+        + Favorite Project (same panel than project and experiences page)
+        + Recent Projects (same panel than project and experiences page)
+        + Recent Experences (same panel than project and experiences page)
+    - Profil Page with:
+        + About me
+        + All skills (panel with progress bar)
+            * HardSkills
+                * Backend skills
+                * Frontend skills
+                * Database skills
+                * Divers
+            * SoftSkills
+                * Emage me import
+        + Curiculum vitae (generated downloadable pdf format)
+    - Project Page with:
+        + All Projects panel
+            * name
+            * light description
+            * starting date
+            * last updated
+            * repository access
+            * more information
+    - Experences page with:
+        + All Experences panel
+            * name
+            * company name
+            * date (start-end)
+            * light description
+            * more information
+    

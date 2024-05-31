@@ -8,15 +8,18 @@ import Nav from '/components/Nav'; // Import the Desc component
 import Footer from '/components/Footer'; // Import the Footer component
 export default function Projects() {
     const { locale, translatedText } = useLocale();
+    // Store the common part of the translation path
+    const globalLPath = translatedText.global?.[locale]; // global laguage path
+    const projectsLPath = translatedText.projects?.[locale]; // project laguage path
     return (
         <div className='main-container'>
           <Head>
-            <title>Luka's portfolio - Projects</title>
+            <title>{projectsLPath?.title}</title>
             <meta name="description" content="Luka Chouville's portfolio website" />
             <link rel="icon" href="#" />
           </Head>
           <Header 
-            title={translatedText.bannerSection?.[locale]?.title}
+            title={globalLPath?.title}
           />
           <Nav/>
           <div className="container">
