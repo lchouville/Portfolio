@@ -1,0 +1,47 @@
+/* Visual Color for dark mode 
+    - don't take in charge the components -
+*/
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+/* Header ----------------------------------------------------------------*/
+body.dark-mode header{
+    background-color: #444444; /* Light grey background */
+    border-color: #252525;
+}
+body.dark-mode header h1{
+    color: #b1b1b1;
+}
+body.dark-mode .btn-nav{
+    background-image: url('/img/nav.iconW.png');
+}
+/* Nav panel */
+body.dark-mode #nav{
+    background-color: #585976;
+    border-color: #8e90b4;
+}
+body.dark-mode #nav li{
+    color: #e8e8e8;
+    border-color: #313131;
+    background-color: #515268;
+}
+/* Content ---------------------------------------------------------------*/
+body.dark-mode .container{
+    background-color: #474747; /* Light grey background */
+    border-color: #585858;
+    color:#b9c2cc;
+}
+body.dark-mode .container h1{
+    color: #a2c0c1;
+}
+body.dark-mode .sliderSection{
+    background-color: #5e5a65;
+    border-color: #adadad;
+}
+/* Footer ----------------------------------------------------------------*/
+body.dark-mode footer{
+    background-color: #444444; /* Light grey background */
+    border-color: #252525;
+    color: #888888;
+}

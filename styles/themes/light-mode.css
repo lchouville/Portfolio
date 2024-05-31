@@ -1,0 +1,47 @@
+/* Visual Color for light mode 
+    - don't take in charge the components -
+*/
+body.light-mode {
+    background-color: whitesmoke;
+    color: #000000;
+}
+/* Header ----------------------------------------------------------------*/
+body.light-mode header{
+    background-color: #ffffff; /* Light grey background */
+    border-color: #ccc;
+}
+body.light-mode header h1{
+    color: #363636;
+}
+body.light-mode .btn-nav{
+    background-image: url('/img/nav.iconB.png');
+}
+/* Nav panel */
+body.light-mode #nav{
+    background-color: #585976;
+    border-color: #2e2f42;
+}
+body.light-mode #nav li{
+    color: #e8e8e8;
+    border-color: #888888;
+    background-color: #515268;
+}
+/* Content ---------------------------------------------------------------*/
+body.light-mode .container{
+    background-color: #f0f0f0; /* Light grey background */
+    border-color: #ccc;
+    color: #463434;
+}
+body.light-mode .container h1{
+    color: #514444;
+}
+body.light-mode .sliderSection{
+    background-color: #e8e8e8;
+    border-color: #363636;
+}
+/* Footer ----------------------------------------------------------------*/
+body.light-mode footer{
+    background-color: #303030; /* Light grey background */
+    border-color: #252525;
+    color: #888888;
+}

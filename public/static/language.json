@@ -1,0 +1,48 @@
+{
+    "bannerSection": {
+        "en": {
+            "title": "Luka's Portfolio"
+        },
+        "fr": {
+            "title": "Portfolio Luka"
+        }
+    },
+    "welcomeSection": {
+        "en": {
+            "title": "Welcome to my portfolio website"
+        },
+        "fr": {
+            "title": "Bienvenue sur mon site portfolio"
+        }
+    },
+    "fpSection": {
+        "en": {
+            "title": "My Favorite Projects",
+            "description": "Here are my 5 favorite projects at this time."
+        },
+        "fr": {
+            "title": "Mes projets préférés",
+            "description": "Voici mes 5 projets préférés à l'heure actuelle."
+        }
+    },
+    "rpSection": {
+        "en": {
+            "title": "My Recent Projects",
+            "description": "Here are my 5 most recent projects."
+        },
+        "fr": {
+            "title": "Mes projets récents",
+            "description": "Voici mes 5 projets récemment travaillés."
+        }
+    },
+    "reSection": {
+        "en": {
+            "title": "My Latest Experiences",
+            "description": "Here are my 5 latest professional experiences."
+        },
+        "fr": {
+            "title": "Mes dernières expériences",
+            "description": "Voici mes 5 dernières expériences professionnelles."
+        }
+    }
+}

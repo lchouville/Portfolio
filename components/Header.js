@@ -1,12 +1,15 @@
+// components/Header.js
+import { changeStateNav } from '../utils/nav.js'; // Adjust the path accordingly
 
-import styles from '/styles/Header.module.css';
-export default function Header() {
+export default function Header({ title }) {
   return (
     <header>
-        <div className={styles.header}>
-          <h1>Luka's portfolio</h1>
-          <p>Welcome to my portfolio website</p>
-        </div>
+        <button 
+          id="btn-nav"
+          className='btn-nav'
+          onClick={() => changeStateNav()}
+        ></button>
+        <h1>{title}</h1>
     </header>
   );
 }
