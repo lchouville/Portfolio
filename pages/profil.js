@@ -22,11 +22,16 @@ export default function Profil() {
             <link rel="icon" href="#" />
           </Head>
           <Header 
+<<<<<<< HEAD
             _title={globalLPath?.title}
+=======
+            title={globalLPath?.title}
+>>>>>>> 31f6a936d380a7afa78cdaf1d745461487f17eea
           />
           <Nav/>
           <div className="container">
             <Desc
+<<<<<<< HEAD
               _title={profilLPath?.about?.title}
               _desc={profilLPath?.about?.name}
             />
@@ -59,6 +64,10 @@ export default function Profil() {
               _h="2"
               _title={profilLPath?.about?.hobbiesT}
               _desc={profilLPath?.about?.hobbies}
+=======
+              title={profilLPath?.about?.title}
+              desc={profilLPath?.about?.description}
+>>>>>>> 31f6a936d380a7afa78cdaf1d745461487f17eea
             />
           </div>
           <Footer />
