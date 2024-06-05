@@ -58,7 +58,6 @@
             "title":"Luka's Portfolio - Profil",
             "about":{
                 "title": "About me",
-<<<<<<< HEAD
                 "name":"Luka Chouville",
                 "actualyT":"Actually",
                 "actualy":"I'm currently studying fullstack developer at Zone 01.",
@@ -73,16 +72,12 @@
                 "why":"",
                 "hobbiesT":"Hobbies",
                 "hobbies":""
-=======
-                "description": "Here is my profile."
->>>>>>> 31f6a936d380a7afa78cdaf1d745461487f17eea
             }
         },
         "fr": {
             "title":"Portfolio Luka - Profil",
             "about":{
                 "title": "À propos de moi",
-<<<<<<< HEAD
                 "name":"Luka Chouville",
                 "actualyT":"Actuellement",
                 "actualy":"Je suis en formation de developpeur fullstack chez Zone 01.",
@@ -97,9 +92,6 @@
                 "why":"",
                 "hobbiesT":"Loisirs",
                 "hobbies":""
-=======
-                "description": "Voici mon profil."
->>>>>>> 31f6a936d380a7afa78cdaf1d745461487f17eea
             }
         }
     },

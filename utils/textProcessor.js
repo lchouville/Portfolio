@@ -3,7 +3,9 @@ import React from 'react';
 
 // Function to process the description string
 export function processText(text) {
-  // Replace newline characters with <br /> elements
+  // check if text exists else just return
+  if (!text) return
+  // Replace newline characters with <br/> elements
   return text.split('\n').map((line, index) => (
     <React.Fragment key={index}>
       {line.split(/(\*\*.*?\*\*|__.*?__|~~.*?~~|\*\.*?\*|_.*?_)/).map((part, i) => {
