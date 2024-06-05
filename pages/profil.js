@@ -24,42 +24,44 @@ export default function Profil() {
           <Header
             _title={globalLPath?.title}
           />
-          <Nav/>
-          <div className="container">
-            <Desc
-              _title={profilLPath?.about?.title}
-              _desc={profilLPath?.about?.name}
-            />
-            <Desc
-              _h="2"
-              _title={profilLPath?.about?.actualyT}
-              _desc={profilLPath?.about?.actualy}
-            />
-            <Desc
-              _h="2"
-              _title={profilLPath?.about?.levelT}
-              _desc={profilLPath?.about?.level}
-            />
-            <Desc
-              _h="2"
-              _title={profilLPath?.about?.objectiveT}
-              _desc={profilLPath?.about?.objective}
-            />
-            <Desc
-              _h="2"
-              _title={profilLPath?.about?.formationsT}
-              _desc={profilLPath?.about?.formations}
-            />
-            <Desc
-              _h="2"
-              _title={profilLPath?.about?.whyT}
-              _desc={profilLPath?.about?.why}
-            />
-            <Desc
-              _h="2"
-              _title={profilLPath?.about?.hobbiesT}
-              _desc={profilLPath?.about?.hobbies}
-            />
+          <Nav _actual="profil"/>
+          <div id="profil-page" className="container">
+            <div id="about-section" className="sub-container"> 
+              <Desc
+                _title={profilLPath?.about?.title}
+                _desc={profilLPath?.about?.name}
+              />
+              <Desc
+                _h="2"
+                _title={profilLPath?.about?.actualyT}
+                _desc={profilLPath?.about?.actualy}
+              />
+              <Desc
+                _h="2"
+                _title={profilLPath?.about?.levelT}
+                _desc={profilLPath?.about?.level}
+              />
+              <Desc
+                _h="2"
+                _title={profilLPath?.about?.whyT}
+                _desc={profilLPath?.about?.why}
+              />
+              <Desc
+                _h="2"
+                _title={profilLPath?.about?.objectiveT}
+                _desc={profilLPath?.about?.objective}
+              />
+              {/* <Desc
+                _h="2"
+                _title={profilLPath?.about?.formationsT}
+                _desc={profilLPath?.about?.formations}
+              /> */}
+              <Desc
+                _h="2"
+                _title={profilLPath?.about?.hobbiesT}
+                _desc={profilLPath?.about?.hobbies}
+              />
+            </div>
           </div>
           <Footer />
         </div>

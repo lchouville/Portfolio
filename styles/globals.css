@@ -117,6 +117,14 @@ font-size: 1.9rem;
   /* visual*/
   font-size: 1.15rem;
 }
+.container p{
+  /* position */
+  /* dimention */
+  /* behavior */
+  text-align: justify;
+  /* visual*/
+  font-size: 1rem;
+}
 /* */
 .sliderSection{
   /* position */
@@ -148,7 +156,6 @@ footer {
   justify-content: center; /* Horizontally centers the content */
   /* visual */
 }
-
 footer p {
   /* position */
   /* dimension */
@@ -156,4 +163,48 @@ footer p {
   text-align: center; /* Center text within the paragraph */
   /* visual */
   margin: 0; /* Remove default margin */
+}
+/* Error ----------------------------------------------------------------*/
+.error{
+  /* position */
+  align-self: center;
+  /* dimention */
+  width: 75vw;
+  height: fit-content;  
+  /* behavior */
+  margin-top: 37%;
+  /* visual*/
+  text-align: center;
+}
+.error h1{
+  /* position */
+  /* dimention */
+  height: fit-content;  
+  /* behavior */
+  margin-bottom: 0;
+  padding-right: 5.25vw;
+  /* visual*/
+  font-size: 32vw;
+  letter-spacing: -5.25vw;
+  /* Font */
+  font-family: 'Cormorant Garamond', serif;
+}
+.error p{
+  /* position */
+  /* dimention */
+  height: fit-content;  
+  /* behavior */
+  margin-bottom: 0;
+  /* visual*/
+  font-size: 2.5em;
+  /* Font */
+  font-family: 'Cormorant Garamond', serif;
+}
+/* Computer version */
+@media screen and (min-width: 900px){
+  .error h1{
+      padding-right: 2.25vw;
+      letter-spacing: -2.25vw;
+      font-size: 15vw;
+  }
 }

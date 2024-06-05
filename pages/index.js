@@ -24,8 +24,8 @@ export default function Home() {
       <Header 
         _title={globalLPath?.title}
       />
-      <Nav/>
-      <div className="container">
+      <Nav _actual="home"/>
+      <div id="home-page" className="container">
         <h1>{homeLPath?.welcome}</h1>
         <div id="fpSection" className='sliderSection'>
           <Desc

@@ -21,8 +21,8 @@ export default function Projects() {
           <Header 
             _title={globalLPath?.title}
           />
-          <Nav/>
-          <div className="container">
+          <Nav _actual="projects"/>
+          <div id="projects-page" className="container">
             
           </div>
           <Footer />

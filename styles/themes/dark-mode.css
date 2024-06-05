@@ -1,52 +1,89 @@
-/* Visual Color for dark mode 
-    - don't take in charge the components -
-*/
+:root {
+    /* Define custom properties for all colors */
+    --colorD_1: #1f1f1f;
+    --colorD_2: #282828;
+    --colorD_3: #464646;
+    --colorD_4: #d6d6d6;
+    --colorD_5: #61626e; 
+    --colorD_5-1: #505262; 
+    --colorD_6: #888888; 
+    --colorD_6-1: #cccccc; 
+    --colorD_7: #313131;
+    --colorD_8: #f0f0f0; 
+    --colorD_9: #161616; 
+}
+
 body.dark-mode {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: var(--colorD_1);
+    color: var(--colorD_4);
 }
+
 /* Header ----------------------------------------------------------------*/
-body.dark-mode header{
-    background-color: #444444; /* Light grey background */
-    border-color: #252525;
+body.dark-mode header {
+    background-color: var(--colorD_2);
+    border-color: var(--colorD_3);
 }
-body.dark-mode header h1{
-    color: #b1b1b1;
+
+body.dark-mode header h1 {
+    color: var(--colorD_4);
 }
-body.dark-mode .btn-nav{
+
+body.dark-mode .btn-nav {
     background-image: url('/img/nav.iconW.png');
 }
+
 /* Nav panel */
-body.dark-mode #nav{
-    background-color: #585976;
-    border-color: #8e90b4;
+body.dark-mode #nav {
+    background-color: var(--colorD_5);
+    border-color: var(--colorD_4);
 }
-body.dark-mode #nav li{
-    color: #e8e8e8;
-    border-color: #313131;
-    background-color: #515268;
+
+body.dark-mode #nav li {
+    border-color: var(--colorD_6);
+    background-color: var(--colorD_5-1);
 }
+
+body.dark-mode #nav li a {
+    color: var(--colorD_6);
+}
+
+body.dark-mode #nav li.actual a {
+    color: var(--colorD_6-1);
+}
+
 /* Content ---------------------------------------------------------------*/
-body.dark-mode .container{
-    background-color: #474747; /* Light grey background */
-    border-color: #585858;
-    color:#b9c2cc;
+body.dark-mode .container {
+    background-color: var(--colorD_7);
+    border-color: var(--colorD_3);
+    color: var(--colorD_4);
 }
+
 body.dark-mode .container h1,
 body.dark-mode .container h2,
 body.dark-mode .container h3,
 body.dark-mode .container h4,
 body.dark-mode .container h5,
-body.dark-mode .container h6{
-    color: #a2c0c1;
+body.dark-mode .container h6 {
+    color: var(--colorD_8);
 }
-body.dark-mode .sliderSection{
-    background-color: #5e5a65;
-    border-color: #adadad;
+
+body.dark-mode .sliderSection {
+    background-color: var(--colorD_7);
+    border-color: var(--colorD_4);
 }
+
+/* Error -----------------------------------------------------------------*/
+body.dark-mode .error {
+    color: var(--colorD_4);
+}
+
+body.dark-mode .error h1 span {
+    color: var(--colorD_4);
+    text-shadow: -0.5vw 0 0 var(--colorD_7);
+}
+
 /* Footer ----------------------------------------------------------------*/
-body.dark-mode footer{
-    background-color: #444444; /* Light grey background */
-    border-color: #252525;
-    color: #888888;
+body.dark-mode footer {
+    background-color: var(--colorD_9);
+    color: var(--colorD_6);
 }

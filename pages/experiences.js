@@ -21,8 +21,8 @@ export default function Experiences() {
           <Header
             _title={globalLPath?.title}
           />
-          <Nav/>
-          <div className="container">
+          <Nav _actual="experiences"/>
+          <div id="experiences-page" className="container">
             
           </div>
           <Footer />

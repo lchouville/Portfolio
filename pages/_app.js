@@ -17,7 +17,6 @@ function MyApp({ Component, pageProps }) {
     if (next) {
       next.classList.add('next-div');
     }
-
     return () => {
       // Cleanup listener on unmount
       if (typeof window !== 'undefined' && window.matchMedia) {

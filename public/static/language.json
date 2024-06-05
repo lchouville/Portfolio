@@ -65,7 +65,7 @@
                 "level":"Fullstack developer intermediate",
                 "techSkillsT":"Technical Skills",
                 "objectiveT":"Objectives",
-                "objective":"**Short term:** Become more specialized in the backend.\n**Long term:** Work in the development of video games and/or artificial intelligence.",
+                "objective":"**Short term:** Become more specialized in the backend.\n\n**Long term:** Work in the development of video games and/or artificial intelligence.",
                 "formationsT":"Formations",
                 "formations":"",
                 "whyT":"Passions  and motivations",
@@ -78,20 +78,26 @@
             "title":"Portfolio Luka - Profil",
             "about":{
                 "title": "À propos de moi",
-                "name":"Luka Chouville",
-                "actualyT":"Actuellement",
-                "actualy":"Je suis en formation de developpeur fullstack chez Zone 01.",
-                "levelT":"Niveau",
+                "name":"Luka Chouville - **Developper FullStack**",
+                "actualyT":"Actuellement:",
+                "actualy":"Apprenant developpeur fullstack - **Zone 01**.",
+                "levelT":"Niveau:",
                 "level":"Développeur Fullstack intermédiaire",
-                "techSkillsT":"Compétences Techniques",
-                "objectiveT":"Objectifs",
-                "objective":"Court terme: Développer des applications en etant plus specialisé dans le backend.\nLong terme: Travailler dans le developpement de jeux video et/ou de l'intelligence artificielle.",
-                "formationsT":"Parcours",
-                "formations":"",
-                "whyT":"Passions  et motivations",
-                "why":"",
-                "hobbiesT":"Loisirs",
-                "hobbies":""
+                "objectiveT":"Objectifs:",
+                "objective":"**Court terme:** Développer des applications en etant plus specialisé dans le backend.\n\n**Long terme:** Travailler dans le developpement de jeux video et/ou de l'intelligence artificielle.",
+                "whyT":"Passions  et motivations:",
+                "why":"Ce que j'aime le plus dans la programmation, c'est la possibilité de créer presque tout ce que l'on imagine, un peu comme assembler des lego.\nTransformer une simple idée en un algorithme souvent bien plus complexe que l'on ne croit.",
+                "formationsT":"Parcours:",
+                "formations":{
+                    "sen":"",
+                    "sio":"",
+                    "artline":"",
+                    "eni":"",
+                    "zone01":""
+                },
+                "hobbiesT":"Loisirs:",
+                "hobbies":"",
+                "techSkillsT":"Compétences Techniques:"
             }
         }
     },
