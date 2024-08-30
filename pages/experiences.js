@@ -8,18 +8,21 @@ import Nav from '/components/Nav'; // Import the Desc component
 import Footer from '/components/Footer'; // Import the Footer component
 export default function Experiences() {
     const { locale, translatedText } = useLocale();
+    // Store the common part of the translation path
+    const globalLPath = translatedText.global?.[locale];        // global laguage path
+    const experiencesLPath = translatedText.experiences?.[locale]; // experiences laguage path
     return (
         <div className='main-container'>
           <Head>
-            <title>Luka's portfolio - Experiences</title>
+            <title>{experiencesLPath?.title}</title>
             <meta name="description" content="Luka Chouville's portfolio website" />
             <link rel="icon" href="#" />
           </Head>
-          <Header 
-            title={translatedText.bannerSection?.[locale]?.title}
+          <Header
+            _title={globalLPath?.title}
           />
-          <Nav/>
-          <div className="container">
+          <Nav _actual="experiences"/>
+          <div id="experiences-page" className="container">
             
           </div>
           <Footer />

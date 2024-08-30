@@ -1,48 +1,120 @@
 {
-    "bannerSection": {
-        "en": {
-            "title": "Luka's Portfolio"
+    "global":{
+        "en":{
+            "title":"Luka's Portfolio",
+            "nav":{
+                "home":"Home",
+                "profil":"My Profil",
+                "projects":"My Projets",
+                "experiences":"My Experiences"
+            }
         },
-        "fr": {
-            "title": "Portfolio Luka"
+        "fr":{
+            "title":"Portfolio Luka",
+            "nav":{
+                "home":"Accueil",
+                "profil":"Mon Profil",
+                "projects":"Mes Projets",
+                "experiences":"Mes Experiences"
+            }
         }
     },
-    "welcomeSection": {
+    "home":{
         "en": {
-            "title": "Welcome to my portfolio website"
+            "title":"Luka's Portfolio",
+            "welcome": "Welcome to my portfolio website",
+            "fpSection": {
+                "title": "My Favorite Projects",
+                "description": "Here are my 5 favorite projects at this time."
+            },
+            "rpSection": {
+                "title": "My Recent Projects",
+                "description": "Here are my 5 most recent projects."
+            },
+            "reSection": {
+                "title": "My Latest Experiences",
+                "description": "Here are my 5 latest professional experiences."
+            }
         },
         "fr": {
-            "title": "Bienvenue sur mon site portfolio"
+            "title":"Portfolio Luka",
+            "welcome": "Bienvenue sur mon portfolio",
+            "fpSection": {
+                "title": "Mes projets préférés",
+                "description": "Voici mes 5 projets préférés à l'heure actuelle."
+            },
+            "rpSection": {
+                "title": "Mes projets récents",
+                "description": "Voici mes 5 projets récemment travaillés."
+            },
+            "reSection": {
+                "title": "Mes dernières expériences",
+                "description": "Voici mes 5 dernières expériences professionnelles."
+            }
         }
     },
-    "fpSection": {
+    "profil":{
         "en": {
-            "title": "My Favorite Projects",
-            "description": "Here are my 5 favorite projects at this time."
+            "title":"Luka's Portfolio - Profil",
+            "about":{
+                "title": "About me",
+                "name":"Luka Chouville",
+                "actualyT":"Actually",
+                "actualy":"I'm currently studying fullstack developer at Zone 01.",
+                "levelT":"Level",
+                "level":"Fullstack developer intermediate",
+                "techSkillsT":"Technical Skills",
+                "objectiveT":"Objectives",
+                "objective":"**Short term:** Become more specialized in the backend.\n\n**Long term:** Work in the development of video games and/or artificial intelligence.",
+                "formationsT":"Formations",
+                "formations":"",
+                "whyT":"Passions  and motivations",
+                "why":"",
+                "hobbiesT":"Hobbies",
+                "hobbies":""
+            }
         },
         "fr": {
-            "title": "Mes projets préférés",
-            "description": "Voici mes 5 projets préférés à l'heure actuelle."
+            "title":"Portfolio Luka - Profil",
+            "about":{
+                "title": "À propos de moi",
+                "name":"Luka Chouville - **Developper FullStack**",
+                "actualyT":"Actuellement:",
+                "actualy":"Apprenant developpeur fullstack - **Zone 01**.",
+                "levelT":"Niveau:",
+                "level":"Développeur Fullstack intermédiaire",
+                "objectiveT":"Objectifs:",
+                "objective":"**Court terme:** Développer des applications en etant plus specialisé dans le backend.\n\n**Long terme:** Travailler dans le developpement de jeux video et/ou de l'intelligence artificielle.",
+                "whyT":"Passions  et motivations:",
+                "why":"Ce que j'aime le plus dans la programmation, c'est la possibilité de créer presque tout ce que l'on imagine, un peu comme assembler des lego.\nTransformer une simple idée en un algorithme souvent bien plus complexe que l'on ne croit.",
+                "formationsT":"Parcours:",
+                "formations":{
+                    "sen":"",
+                    "sio":"",
+                    "artline":"",
+                    "eni":"",
+                    "zone01":""
+                },
+                "hobbiesT":"Loisirs:",
+                "hobbies":"",
+                "techSkillsT":"Compétences Techniques:"
+            }
         }
     },
-    "rpSection": {
+    "projects":{
         "en": {
-            "title": "My Recent Projects",
-            "description": "Here are my 5 most recent projects."
+            "title":"Luka's Portfolio - Projects"
         },
         "fr": {
-            "title": "Mes projets récents",
-            "description": "Voici mes 5 projets récemment travaillés."
+            "title":"Portfolio Luka - Projets"
         }
     },
-    "reSection": {
+    "experiences":{
         "en": {
-            "title": "My Latest Experiences",
-            "description": "Here are my 5 latest professional experiences."
+            "title":"Luka's Portfolio - Experiences"
         },
         "fr": {
-            "title": "Mes dernières expériences",
-            "description": "Voici mes 5 dernières expériences professionnelles."
+            "title":"Portfolio Luka - Experiences"
         }
     }
 }
