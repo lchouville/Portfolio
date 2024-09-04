@@ -56,10 +56,19 @@ const RepoPage = ({ username="lchouville" }) => {
     const installation = extractSection(readmeLines, 'Installation');
     const authors = extractSection(readmeLines, 'Authors');
 
+    let created_at;
+    let updated_at;
+    // get update and create dates if details are available
+    if (repoDetails != null) {
+      created_at = new Date(repoDetails.created_at).toLocaleDateString();
+      updated_at = new Date(repoDetails.updated_at).toLocaleDateString();
+    }
+
+
     return (
         <div className='main-container'>
             <Head>
-                <title>{repoName}</title>
+                <title>{globalLPath?.title} - {repoName}</title>
                 <meta name="description" content="Luka Chouville's portfolio website" />
                 <link rel="icon" href="#" />
             </Head>
@@ -69,8 +78,8 @@ const RepoPage = ({ username="lchouville" }) => {
             <Nav _actual="projects"/>
             <div id="projects-dtpage" className="container">
                 <h2>{repoName}</h2><a href="#">+repository</a>
-                <p><strong>Created at:</strong> {new Date(repoDetails.created_at).toLocaleDateString()}</p>
-                <p><strong>Last update:</strong> {new Date(repoDetails.updated_at).toLocaleDateString()}</p>
+                <p><strong>Created at:</strong> {created_at}</p>
+                <p><strong>Last update:</strong> {updated_at}</p>
                 <div className='sub-container'>
                     <h3>Description:</h3>
                     <p>{description}</p>

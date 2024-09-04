@@ -31,13 +31,12 @@ const GitHubRepos = ({ username, filter }) => {
   }, [username]);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (error) return <p>Error on data fetch: {error}</p>;
 
   let filteredRepos;
+  repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
   if (filter) {
     // Sort only the 5 most recent update projects in order
-    repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
-    // Slice the first 5 projects (the most recent ones) and return them as a list of links and descriptions.
     filteredRepos = repos.slice(0, 5);
   }else{
     filteredRepos = repos

@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className='main-container'>
       <Head>
-        <title>{translatedText.home?.[locale]?.title}</title>
+        <title>{globalLPath?.title}</title>
         <meta name="description" content="Luka Chouville's portfolio website" />
         <link rel="icon" href="#" />
       </Head>
