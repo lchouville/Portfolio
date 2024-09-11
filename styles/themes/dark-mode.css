@@ -72,6 +72,16 @@ body.dark-mode .sliderSection {
     border-color: var(--colorD_4);
 }
 
+body.dark-mode .project-container_rect{
+    border-color: var(--colorD_5)
+}
+body.dark-mode .project-container_rect p{
+    color: var(--colorD_6-1);
+}
+body.dark-mode .project-container_rect small{
+    color: var(--colorD_6);
+}
+
 /* Error -----------------------------------------------------------------*/
 body.dark-mode .error {
     color: var(--colorD_4);

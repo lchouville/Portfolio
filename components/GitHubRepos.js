@@ -41,18 +41,24 @@ const GitHubRepos = ({ username, filter }) => {
   }else{
     filteredRepos = repos
   }
+  
 
+  // Render each repo as a list item with name and description, along with a link to the repo's GitHub page and a link to more info page. 155 characters limit for description and "..." at the end. 155 characters limit for description and "..." at the end. 155 characters limit for description and "..." at the end. 155 characters limit for description and "..." at the end. 155 characters limit for description and "..." at the end. 155 characters limit for description and "..." at the end. 155 characters limit for description and "..." at the end. 155 characters limit for description and "..." at the
   return (
-    <ul>
+    <ul id='project-list'>
       {filteredRepos.map(repo => (
-        <li key={repo.id}>
-          <Link href={`/repo/${repo.name}`}>
-            {repo.name}
-          </Link>: {repo.description || 'No description'} 
-          {/* creation date || last update */}
-          <br />
+        <li key={repo.id} className='project-container_rect'>
+          <h3><
+            Link href={`/repo/${repo.name}`}>
+              {repo.name}
+            </Link>
+          </h3>
+          <p>{repo.description?.slice(0, 155)||'No Description' + (repo.description?.length > 155? '...' : '')}</p>
+          <div className='url-container'>
+            <small><a href={repo.html_url} target='_blank'>View on GitHub</a></small>
+            <small><Link href={`/repo/${repo.name}`}>more info</Link></small>
+          </div>
           <small>Updated at: {new Date(repo.updated_at).toLocaleString()}</small>
-          <br />
         </li>
       ))}
     </ul>

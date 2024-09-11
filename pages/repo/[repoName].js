@@ -10,6 +10,8 @@ import Footer from '/components/Footer'; // Import the Footer component
 /* Content */
 import { useLocale } from '../../context/LocaleContext';
 
+const { marked } = require('marked');  // Correct way to import marked in newer versions
+
 const RepoPage = ({ username="lchouville" }) => {
     const { locale, translatedText } = useLocale();
     const globalLPath = translatedText.global?.[locale]; // global laguage path
@@ -48,58 +50,87 @@ const RepoPage = ({ username="lchouville" }) => {
     );
 
     // Split README content into lines
-    const readmeLines = readme.split('\n');
-
+    let readmeLines = readme.split('\n');
+    let section_name = ['Description','Usage','Installation','Authors']
+   
+    const tReadmeLines = extractSection(readmeLines,`${repoName} - ${locale}`,"#").split('\n');
+    if (tReadmeLines.length > 1){ 
+      readmeLines = tReadmeLines;
+      switch (locale){
+        case 'fr':
+          section_name = ['Description','Utilisation','Installation','Auteurs']
+          break;
+        default: // Default english
+          break;
+      }
+    }
+    console.log(readmeLines);
     // Extract desired sections
-    const description = extractSection(readmeLines, 'Description');
-    const usage = extractSection(readmeLines, 'Usage');
-    const installation = extractSection(readmeLines, 'Installation');
-    const authors = extractSection(readmeLines, 'Authors');
+    const description = marked(extractSection(readmeLines, section_name[0],'##'));
+    const usage = marked(extractSection(readmeLines, section_name[1],'##'));
+    const installation = marked(extractSection(readmeLines, section_name[2],'##'));
+    const authors = marked(extractSection(readmeLines, section_name[3],'##'));
 
     let created_at;
     let updated_at;
     // get update and create dates if details are available
     if (repoDetails != null) {
       created_at = new Date(repoDetails.created_at).toLocaleDateString();
-      updated_at = new Date(repoDetails.updated_at).toLocaleDateString();
+      updated_at = new Date(repoDetails.updated_at).toLocaleString();
     }
 
 
     return (
-        <div className='main-container'>
-            <Head>
-                <title>{globalLPath?.title} - {repoName}</title>
-                <meta name="description" content="Luka Chouville's portfolio website" />
-                <link rel="icon" href="#" />
-            </Head>
-            <Header 
-                _title={globalLPath?.title}
-            />
-            <Nav _actual="projects"/>
-            <div id="projects-dtpage" className="container">
-                <h2>{repoName}</h2><a href="#">+repository</a>
-                <p><strong>Created at:</strong> {created_at}</p>
-                <p><strong>Last update:</strong> {updated_at}</p>
-                <div className='sub-container'>
-                    <h3>Description:</h3>
-                    <p>{description}</p>
-                </div>
-                <div className='sub-container'>
-                    <h3>Usage:</h3>
-                    <p>{usage}</p>
-                </div>
-                <div className='sub-container'>
-                    <h3>Installation:</h3>
-                    <p>{installation}</p>
-                </div>
-                <div className='sub-container'>
-                    <h3>Authors:</h3>
-                    <p>{authors}</p>
-                </div>
+      <div className='main-container'>
+        <Head>
+          <title>{`${globalLPath?.title} - ${repoName}`}</title>
+          <meta name="description" content="Luka Chouville's portfolio website" />
+          <link rel="icon" href="#" />
+        </Head>
+        <Header _title={globalLPath?.title} />
+        <Nav _actual="projects" />
+        <div id="projects-dtpage" className="container">
+          <h2>{repoName}</h2>
+          <small><a href="#" target='_blank'>View on GitHub</a></small>
+          <p><strong>Created at:</strong> {created_at}</p>
+          <p><strong>Last update:</strong> {updated_at}</p>
+    
+          {/* Only render Description section if content is not empty */}
+          {description && (
+            <div className='sub-container'>
+              <h3>{section_name[0]}:</h3>
+              <div dangerouslySetInnerHTML={{ __html: description }} />
             </div>
-            <Footer />
+          )}
+    
+          {/* Only render Usage section if content is not empty */}
+          {usage && (
+            <div className='sub-container'>
+              <h3>{section_name[1]}:</h3>
+              <div dangerouslySetInnerHTML={{ __html: usage }} />
+            </div>
+          )}
+    
+          {/* Only render Installation section if content is not empty */}
+          {installation && (
+            <div className='sub-container'>
+              <h3>{section_name[2]}:</h3>
+              <div dangerouslySetInnerHTML={{ __html: installation }} />
+            </div>
+          )}
+    
+          {/* Only render Authors section if content is not empty */}
+          {authors && (
+            <div className='sub-container'>
+              <h3>{section_name[3]}:</h3>
+              <div dangerouslySetInnerHTML={{ __html: authors }} />
+            </div>
+          )}
         </div>
+        <Footer />
+      </div>
     );
+    
 };
 
 export default RepoPage;
@@ -111,9 +142,10 @@ export default RepoPage;
  * @param {string} sectionName - The name of the section to extract (e.g., "Description").
  * @returns {string} - The content of the specified section or a default message if not found.
  */
-const extractSection = (readmeContent, sectionName) => {
-    const header = `## ${sectionName}`;
-    const startIndex = readmeContent.findIndex(line => line.trim() === header);
+const extractSection = (readmeContent, sectionName,sep) => {
+    const header = `${sep} ${sectionName}`;
+    try {
+      const startIndex = readmeContent.findIndex(line => line.trim() === header);
   
     if (startIndex === -1) {
       return "";
@@ -122,7 +154,7 @@ const extractSection = (readmeContent, sectionName) => {
     const contentStart = startIndex + 1;
     const relativeEndIndex = readmeContent
       .slice(contentStart)
-      .findIndex(line => line.startsWith('## '));
+      .findIndex(line => line.startsWith(`${sep} `));
   
     const endIndex =
       relativeEndIndex !== -1
@@ -133,5 +165,8 @@ const extractSection = (readmeContent, sectionName) => {
     const sectionContent = sectionLines.join('\n').trim();
   
     return sectionContent;
+    } catch (error) {
+      return "Section not found.";
+    }
   };
   

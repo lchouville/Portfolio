@@ -71,7 +71,15 @@ body.light-mode .sliderSection {
     background-color: var(--colorL_7);
     border-color: var(--colorL_4);
 }
-
+body.light-mode .project-container_rect{
+    border-color: var(--colorL_5)
+}
+body.light-mode .project-container_rect p{
+    color: var(--colorL_6-1);
+}
+body.light-mode .project-container_rect small{
+    color: var(--colorL_6);
+}
 /* Error -----------------------------------------------------------------*/
 body.light-mode .error {
     color: var(--colorL_4);
